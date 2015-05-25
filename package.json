@@ -1,0 +1,19 @@
+{
+  "name": "pl-react-webpack-hot",
+  "version": "0.0.1",
+  "description": "playground for React with Webpack and Hot-reloading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKVal/pl-react-webpack-hot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexKVal/pl-react-webpack-hot/issues"
+  },
+  "homepage": "https://github.com/AlexKVal/pl-react-webpack-hot#readme"
+}
