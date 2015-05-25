@@ -4,8 +4,11 @@
   "description": "playground for React with Webpack and Hot-reloading",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && npm run browser && npm run server",
     "static": "rm -rf build && mkdir -p build && cp app/index.html build/",
     "build": "npm run static && webpack --bail --progress",
+    "server": "webpack-dev-server --content-base build/",
+    "browser": "open http://localhost:8080/webpack-dev-server/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
