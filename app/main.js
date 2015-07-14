@@ -2,38 +2,23 @@
 import React from 'react';
 
 import {
-  Navbar,
-  Nav,
-  MenuItem,
-  DropdownButton
+  Button,
+  ButtonGroup,
+  styleMaps
 } from 'react-bootstrap';
 
-const Auth = React.createClass({
-  render() {
-    return (
-      <DropdownButton title="Hello" noCaret navItem>
-        <h6>Login with</h6>
-        <MenuItem href="/auth/facebook">
-          Facebook
-        </MenuItem>
-        <MenuItem href="/auth/twitter">
-          Twitter
-        </MenuItem>
-      </DropdownButton>
-    );
-  }
-});
+styleMaps.addStyle('myCustom');
 
 const App = React.createClass({
   displayName: 'App',
 
   render() {
     return (
-      <Navbar inverse>
-        <Nav right>
-          <Auth />
-        </Nav>
-      </Navbar>
+      <ButtonGroup>
+        <Button bsStyle='primary'>My button</Button>
+        <Button bsStyle='myCustom'>My button</Button>
+        <Button bsStyle='facebook'>My button</Button>
+      </ButtonGroup>
     );
   }
 });
